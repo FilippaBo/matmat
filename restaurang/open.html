@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/grid.css">
+<script src="js/script.js"></script>
+  <title>Restaurang</title>
+</head>
+  <body class="bodyopen">
+    <nav class="openmeny">
+  <a href="index.html" title="home" class="color" ><h2 class="home">Home</h2> </a>
+  <a href="open.html" title="open" class="color" > <h2>Öppetider </h2></a>
+  <a href="galleri.html" title="galleri" class="color" ><h2 >Galleri </h2></a>
+</nav>
+<!--allt inom nav tillhör menyraden. de är länkar mellan de ollika html sidorna, alla har oxå en gemmensam class "color" vilket jag senare använder i style. -->
+<div class="opencontainer">
+
+  <!--TABLE MED ÖPPETIDER-->
+  <table class="oppetider">
+    <h2>Öppetider:</h2>
+    <tr>
+     <td>Måndag </td>
+      <td>9.30-23.00</td>
+    </tr>
+    <tr>
+      <td>Tisdag:</td>
+      <td>10.00-22.00</td>
+    </tr>
+    <td>Onsdag:</td>
+     <td>Stängt</td>
+   </tr>
+   <tr>
+     <td>Torsdag</td>
+     <td>11.00-19.00</td>
+   </tr>
+   <td>Fredag:</td>
+    <td>9.00-23.00 (Filmkväll 23.30-2.00)</td>
+  </tr>
+  <tr>
+    <td>Lördag</td>
+    <td>11.00-21.00 </td>
+  </tr>
+  <tr>
+    <td>Söndag</td>
+    <td>11.30-17.00</td>
+  </tr>
+  </table>
+    <!--Öppetider slut-->
+
+    <button type="button" class="bokaknapp" onclick="alert('VI HAR JUST NU FULLBOKAT TYVÄRR')">Boka bord</button>
+	
+  <h2 class="hämtmat"> Vi erbjuder även mat för avhämtning</h2>
+
+
+<ul class="kontakt">
+  <li>KONTAKT</li>
+  <li>Telefonnummer: 070 000 00 00</li>
+  <li>Emailadress: restaurang@gmail.com</li>
+</ul>
+</div>
+
+  </body>
+</html>
