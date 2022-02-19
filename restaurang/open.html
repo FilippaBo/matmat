@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <!--google fonts-->
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -13,14 +17,16 @@
     <nav class="openmeny">
   <a href="index.html" title="home" class="color" ><h2 class="home">Home</h2> </a>
   <a href="open.html" title="open" class="color" > <h2>Öppetider </h2></a>
-  <a href="galleri.html" title="galleri" class="color" ><h2 >Galleri </h2></a>
+  <a href="galleri.html" title="galleri" class="color" ><h2 class="art">Galleri </h2></a>
 </nav>
+<!-- anledningen till att vi fick problem med knappen galleri, dvs ville inte lägga sig med margin var att class saknade ett = -->
 <!--allt inom nav tillhör menyraden. de är länkar mellan de ollika html sidorna, alla har oxå en gemmensam class "color" vilket jag senare använder i style. -->
 <div class="opencontainer">
 
+<h2 class="opentimes">Öppetider:</h2>
   <!--TABLE MED ÖPPETIDER-->
   <table class="oppetider">
-    <h2>Öppetider:</h2>
+
     <tr>
      <td>Måndag </td>
       <td>9.30-23.00</td>
@@ -29,6 +35,7 @@
       <td>Tisdag:</td>
       <td>10.00-22.00</td>
     </tr>
+    <tr>
     <td>Onsdag:</td>
      <td>Stängt</td>
    </tr>
@@ -36,6 +43,7 @@
      <td>Torsdag</td>
      <td>11.00-19.00</td>
    </tr>
+   <tr>
    <td>Fredag:</td>
     <td>9.00-23.00 (Filmkväll 23.30-2.00)</td>
   </tr>
@@ -49,16 +57,21 @@
   </tr>
   </table>
     <!--Öppetider slut-->
-
+    
+    <!--bokningsknapp-->
     <button type="button" class="bokaknapp" onclick="alert('VI HAR JUST NU FULLBOKAT TYVÄRR')">Boka bord</button>
-	
-  <h2 class="hämtmat"> Vi erbjuder även mat för avhämtning</h2>
 
+  <h2 class="hamtmat"> Vi erbjuder även mat för avhämtning</h2>
+
+  <img src="img/matmat.jpeg" alt="mat" id="bildpahamtmat">
 
 <ul class="kontakt">
   <li>KONTAKT</li>
   <li>Telefonnummer: 070 000 00 00</li>
   <li>Emailadress: restaurang@gmail.com</li>
+  <li> <a href="https://www.google.com/maps/place/Sorsele/@65.5325552,15.2893857,7z/data=!4m5!3m4!1s0x46770a1795e4eedb:0x4034506de8c8510!8m2!3d65.5349378!4d17.5421752"
+    title="maps" target="_blank" class="hittahit"> Hitta hit </a>
+</li>
 </ul>
 </div>
 

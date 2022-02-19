@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <!--google fonts-->
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -15,57 +20,120 @@
     <nav>
   <a href="index.html" title="home" class="color" ><h2 class="home">Home</h2> </a>
   <a href="open.html" title="open" class="color" > <h2>Öppetider </h2></a>
-  <a href="galleri.html" title="galleri" class="color" ><h2 >Galleri </h2></a>
+  <a href="galleri.html" title="galleri" class="color" ><h2 class="art">Galleri </h2></a>
 </nav>
 <!--allt inom min nav tillhör menyraden. de är länkar mellan de ollika html sidorna, alla har oxå en gemmensam class "color" vilket jag senare använder i style. -->
   <div class="container">
 <header></header>
 
-<h1 class="rubrik">Namn på restaurangen</h1>
+<h1 class="rubrik">Restaurang Matmat</h1>
 <img src="img/hemimg.jpeg" alt="fjällbild" class="hemimg">
 
 
-    <p></p>
-
   <!--Menyn. td-->
-  <h2 class="menytitel">Vår Meny</h2>
+  <h2 id="menytitel">Vår Meny</h2>
 
-<table class="meny">
+  <h2 class="mattitel">Förrätt</h2>
+<table class="förrattmeny">
   <tr>
-   <td>Struts</td>
+   <td>Toast skagen</td>
+    <td>75:-</td>
+  </tr>
+  <tr>
+    <td>Kantarelltoast</td>
+    <td>60:-</td>
+  </tr>
+  <tr>
+   <td>Råbiff</td>
+    <td>80:-</td>
+  </tr>
+  <tr>
+  <td>Burrata med plommontomater</td>
+    <td>60:-</td>
+  </tr>
+
+</table>
+    <h2 class="mattiteltva">Varmrätt</h2>
+<table class="varmrattmeny">
+
+  <tr>
+    <td>Fjällbjörksburgare m. potatisklyftor</td>
     <td>155:-</td>
   </tr>
   <tr>
-    <td>Lite äggröra</td>
-    <td>155:-</td>
+    <td>Härjehågnaburgare (vegansk) m. pommes-frites</td>
+    <td>140:-</td>
   </tr>
   <tr>
-   <td>Gårdagens Oboy</td>
-    <td>155:-</td>
+    <td>Smörstekt fjällröding m. kokt potatis</td>
+    <td>135:-</td>
   </tr>
   <tr>
-  <td>Stela salta pinnar</td>
-    <td>155:-</td>
+    <td>Schnitzel m. potatismos och grönsaker</td>
+    <td>150:-</td>
   </tr>
   <tr>
-    <td>Maträtt</td>
-    <td>155:-</td>
-  </tr>
-  <tr>
-    <td>Maträtt</td>
-    <td>155:-</td>
-  </tr>
-  <tr>
-    <td>Maträtt</td>
-    <td>155:-</td>
+    <td>Husets ryggbiff m. ugnsbakad potatis</td>
+    <td>165:-</td>
   </tr>
 </table>
+<h2 class="mattiteltre">Efterrätt</h2>
+<table class="efterrattmeny">
+ <tr>
+  <td>Kladdkaka m.grädde</td>
+  <td>50:-</td>
+ </tr>
+ <tr>
+  <td>Creme Bruleé</td>
+  <td>60:-</td>
+ </tr>
+ <tr>
+  <td>Hemgjord glass m. chokladsås</td>
+  <td>50:-</td>
+ </tr>
+ <tr>
+  <td>Bananasplit</td>
+  <td>40:-</td>
+ </tr>
+ <tr>
+  <td>Gräddglass i strut m.strössel</td>
+  <td>30:-</td>
+ </tr>
+</table>
+
+  <h2 class="drycktitel">Dryck</h2>
+<table class="dryck">
+  <tr>
+    <td>Läsk (Coca-cola, Fanta, Sprite, Trocadero, Mer)</td>
+    <td>25:-</td>
+  </tr>
+  <tr>
+    <td>Ramlösa (Naturell, Citron, Lime, Granatäpple)</td>
+    <td>20:-</td>
+  </tr>
+  <tr>
+    <td>Vin (Vit, Röd)</td>
+    <td>90:-</td>
+  </tr>
+  <tr>
+    <td>Öl & cider</td>
+    <td>45:-</td>
+  </tr>
+
+</table>
   <!--Menyn slut-->
+  <img src="./img/resturantt.jpeg" alt="bild på restaurang" id="bildparestaurang">
+
   <div class="utfyllning">
 <!--  <p> idenhärrutanärdetvitutfillnadstextsomskavaraunderlinad
 </p> -->
 </div>
-  <ul class="kontakt">
+
+<a href="#menytitel" class="toppenknapp"> Till Menyn </a>
+<div class="kontakt">
+  <!--Gemensam kontakt för alla därav samma klassnamn-->
+
+  <ul>
     <li>KONTAKT</li>
     <li>Telefonnummer: 070 000 00 00</li>
     <li>Emailadress: restaurang@gmail.com</li>
@@ -74,6 +142,15 @@
 </li>
   </ul>
 
+</div>
+<!--dropdownmenyn som endast syns vid mobilanpassat-->
+<div class="dropdown">
+  <button class="dropbtn">HEM</button>
+  <div class="dropdown-content">
+    <a href="open.html">ÖPPETIDER</a>
+    <a href="galleri.html">GALLERI</a>
+  </div>
+</div>
 </div>
 
   </body>

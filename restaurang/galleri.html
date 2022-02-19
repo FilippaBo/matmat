@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/grid.css">
-<script src="js/script.js"></script>
+
   <title>Restaurang</title>
 </head>
   <body>
@@ -13,25 +13,40 @@
   <nav>
     <a href="index.html" title="home" class="color" ><h2 class="home">Home</h2> </a>
     <a href="open.html" title="open" class="color" > <h2>Öppetider </h2></a>
-    <a href="galleri.html" title="galleri" class="color" ><h2 >Galleri </h2></a>
+    <a href="galleri.html" title="galleri" class="color" ><h2 class="art">Galleri </h2></a>
   </nav>
 <div class="gallericontainer">
-  <p id="osyligtext"> OSYNLIG TEXT </p>
+  <p id="osynligtext"> Vårt Galleri </p>
   <!--allt inom min nav tillhör menyraden. de är länkar mellan de ollika html sidorna, alla har oxå en gemmensam class "color" vilket jag senare använder i style. -->
+
+
+
   <div class="bildspel">
   <!-- The grid: four columns -->
     <div class="row">
       <div class="column">
-        <img src="img/ren.jpeg" alt="Ren" onclick="myFunction(this);">
+        <img src="img/ren.jpeg" alt="Ren" onclick="myFunction(this);" class="ren">
       </div>
       <div class="column">
-        <img src="img/restaurangifjällen.jpeg" alt="Restaurang" onclick="myFunction(this);">
+        <img src="img/restaurangifjällen.jpeg" alt="Restaurang" onclick="myFunction(this);" class="imgfjall">
       </div>
       <div class="column">
-        <img src="img/skidlift.jpeg" alt="Skidlift" onclick="myFunction(this);">
+        <img src="img/skidlift.jpeg" alt="Skidlift" onclick="myFunction(this);" class="lift">
       </div>
       <div class="column">
-        <img src="img/skog.jpeg" alt="Skog" onclick="myFunction(this);">
+        <img src="img/soppa.jpeg" alt="Soppa" onclick="myFunction(this);" class="Soppa">
+      </div>
+      <div class="column">
+        <img src="img/skog.jpeg" alt="Skog" onclick="myFunction(this);" class="skog">
+      </div>
+      <div class="column">
+        <img src="img/sillmacka.jpeg" alt="Sillmacka" onclick="myFunction(this);" class="sill">
+      </div>
+      <div class="column">
+        <img src="img/bar.jpeg" alt="Bar" onclick="myFunction(this);" class="bar">
+      </div>
+      <div class="column">
+        <img src="img/disk.jpeg" alt="Disk" onclick="myFunction(this);" class="disk">
       </div>
     </div>
 
@@ -44,7 +59,11 @@
     <!-- Image text -->
     <div id="imgtext"></div>
   </div>
+
  </div>
+
+
+<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 <ul class="kontakt">
   <li>KONTAKT</li>
@@ -56,6 +75,8 @@
 </ul>
 
 </div>
+
+<!--länk  till java fil-->
 <script type="text/javascript" src="js/script.js">
 </script>
   </body>
