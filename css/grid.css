@@ -36,7 +36,7 @@ vi har använd onsynlig text för att direktera vart kntakt ska vara*/
 }
 
 .toppenknapp{
-  grid-column: 1/-1 ;
+  grid-column: 4/6 ;
   grid-row:20/21 ;
 }
 
@@ -125,7 +125,7 @@ grid-column: 1/-1 ;
   grid-row:  5/7;
 }
 .hamtmat{
-  grid-column: 4/6;
+  grid-column: 2/6;
   grid-row:  4/5;
 }
 
@@ -215,7 +215,7 @@ grid-column: 1/-1 ;
   /* anledningen till att vi inte lyckades få menyn att lägga sig som
   vi ville var att classnamnet inte var rätt*/
 
-  .dropbtn{
+  .dropdown{
     grid-column: 1/-1;
     grid-row: 1/2;
   }
