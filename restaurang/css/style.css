@@ -145,16 +145,15 @@ font-family: 'DM Serif Display', serif;
 .opentimes{
   font-family: 'DM Serif Display', serif;
   font-size: 200%;
-  margin: 5% 0px 5% 0px;
+  margin: 5%;
 }
 
 .bokaknapp{
   background-color:white;
   color: black;
-  border: 0px;
   padding: 5%;
-  margin-top: 40px;
-  font-size:20px;
+  margin-top: 10%;
+  font-size:25%;
 }
 
 /*byter färg när man pekar på den */
@@ -168,7 +167,7 @@ font-family: 'DM Serif Display', serif;
   opacity: 100%;
 }
 #bildpahamtmat{
-  margin: 20px;
+  margin: 10%;
 }
 /*slut ÖPPETIDER*/
 
@@ -179,7 +178,7 @@ font-family: 'DM Serif Display', serif;
 .column {
   float: left;
   width: 25%;
-  padding: 10px;
+  padding: 5%;
 }
 
 /* Style the images inside the grid */
@@ -274,7 +273,9 @@ margin-bottom: 10%;
 
 
 
-/*när sidan blir mindre än 450px händer detta*/
+/*när sidan blir mindre än 450px händer detta
+
+den vill inte länka*/
 @media only screen and (max-width: 450px){
 
 /* Style The Dropdown Button */

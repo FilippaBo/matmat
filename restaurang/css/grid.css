@@ -1,0 +1,355 @@
+.container{
+  display:grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+}
+
+.color {
+  grid-column:1/-1 ;
+  grid-row:1/2 ;
+}
+
+.rubrik  {
+grid-column:1/-1 ;
+grid-row: 1/3;
+text-align: center;
+}
+
+.hemimg{
+  grid-column:1/-1 ;
+grid-row:3/6 ;
+}
+
+.kontakt {
+  grid-column: 1/-1;
+}
+/*saknar radplasering, den är densamma för alla html och lägger sig på första lediga ruta,
+vi har använd onsynlig text för att direktera vart kntakt ska vara*/
+.utfyllning{
+  grid-column:1/-1 ;
+  grid-row:6/7 ;
+}
+
+#menytitel{
+  grid-column: 1/-1 ;
+  grid-row:7/8 ;
+}
+
+.toppenknapp{
+  grid-column: 1/-1 ;
+  grid-row:20/21 ;
+}
+
+.dropbtn{
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+/*Menyn*/
+.mattitel{
+    grid-column: 1/-1 ;
+  grid-row:8/9 ;
+  text-align: center;
+}
+#bildpabakelse{
+  grid-column:1/3 ;
+  grid-row:9/11;
+}
+.förrattmeny{
+  grid-column:3/-3;
+  grid-row:9/11;
+}
+.mattiteltva{
+grid-column: 1/-1;
+  grid-row:11/12 ;
+}
+
+.varmrattmeny{
+  grid-column:3/-3 ;
+  grid-row:12/14 ;
+}
+.mattiteltre{
+grid-column: 1/-1;
+  grid-row:14/15;
+}
+.efterrattmeny{
+  grid-column:3/-3 ;
+  grid-row:15/17 ;
+}
+
+.drycktitel{
+grid-column: 1/-1 ;
+  grid-row:17/18 ;
+    text-align: center;
+}
+
+.dryck{
+  grid-column:3/-3 ;
+  grid-row:18/19 ;
+}
+/*Menyn slut*/
+/*restaurangbild*/
+#bildparestaurang{
+  grid-column:1/-1;
+  grid-row:19/20
+}
+
+/*ÖPPETIDER*/
+.opentimes{
+  grid-column: 1/-1 ;
+  text-align: center;
+}
+.opencontainer{
+  display:grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+}
+.oppetider{
+  grid-column: 2/8;
+  grid-row: 2/3;
+}
+.openmeny{
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+.hämtmat{
+  grid-column: 2/5;
+  grid-row:  4/5;
+}
+.bokaknapp{
+  grid-column: 3/7;
+  grid-row:  3/4;
+}
+#bildpahamtmat{
+  grid-column: 2/5;
+  grid-row:  5/7;
+}
+.hamtmat{
+  grid-column: 4/6;
+  grid-row:  4/5;
+}
+
+/*SLUT ÖPPETIDER*/
+
+
+
+/*Galleri*/
+.gallericontainer{
+  display:grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+}
+
+.bildspel {
+  grid-column:2/8;
+  grid-row:2/5;
+}
+
+#osynligtext {
+ grid-column: 1/-1;
+ grid-row: 1/2;
+}
+
+/* verkar inte behövs då bilderna endast ligger i ett kollag inom .bildcontainer
+.ren{
+  grid-column:2/3;
+  grid-row:1/2;
+}
+
+.imgfjall{
+  grid-column:3/4;
+  grid-row:1/3;
+}
+
+.lift{
+  grid-column:4/5;
+  grid-row:1/2;
+}
+
+.skog{
+  grid-column:7/8;
+  grid-row:1/3;
+}
+
+.sill{
+  grid-column:6/7;
+  grid-row:2/3;
+}
+
+.soppa{
+  grid-column:1/3;
+  grid-row:1/2;
+}
+.bar{
+  grid-column:7/8;
+  grid-row:2/3;
+}
+.disk{
+  grid-column:6/7;
+  grid-row:2/3;
+}
+*/
+.imgcontainer{
+  grid-column:2/-2;
+  grid-row:5/7;
+}
+
+.text {
+  grid-column: 2/-2;
+  grid-row: 5/6;
+}
+/*SLUT Galleri*/
+
+
+/*när sidan blir mindre än 450px händer detta
+har testat ifall det är grid som är fel, det är nånstans i html*/
+
+@media only screen and (max-width: 450px){
+
+
+/*la till denna*/
+  .container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+  }
+
+  /* anledningen till att vi inte lyckades få menyn att lägga sig som
+  vi ville var att classnamnet inte var rätt*/
+
+  .dropbtn{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+
+  .rubrik {
+   grid-column: 1/-1;
+   grid-row: 2/3;
+  }
+
+  .hemimg{
+    grid-column:1/-1;
+    grid-row:1/3;
+  }
+
+  #menytitel{
+    grid-column:1/-1;
+    grid-row:3/4;
+  }
+
+  .mattitel{
+    grid-column: 1/-1 ;
+    grid-row:4/5 ;
+  }
+
+  .förrattmeny{
+    grid-column:2/-2;
+    grid-row:5/7;
+  }
+  .mattiteltva{
+  grid-column: 1/-1;
+    grid-row:7/8 ;
+  }
+
+  .varmrattmeny{
+    grid-column:2/-2 ;
+    grid-row:8/9 ;
+  }
+  .mattiteltre{
+  grid-column: 1/-1;
+    grid-row:9/10;
+  }
+  .efterrattmeny{
+    grid-column:3/-3 ;
+    grid-row:10/12 ;
+  }
+
+  .drycktitel{
+  grid-column: 1/-1 ;
+    grid-row:12/13 ;
+  }
+
+  .dryck{
+    grid-column:3/-3 ;
+    grid-row:13/14;
+  }
+
+  #bildparestaurang{
+    grid-column:1/-1 ;
+    grid-row:14/16;
+  }
+
+  .toppenknapp{
+    grid-column:1/-1 ;
+    grid-row:16/17;
+  }
+}
+
+/* orginalet, ändrade lite i ordningen och här är den första versionen/ f
+
+@media only screen and (max-width: 450px){
+  .dropbtn{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+  .container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+  }
+
+  .rubrik {
+   grid-column: 1/-1;
+   grid-row: 2/3;
+  }
+
+  .hemimg{
+    grid-column:1/-1;
+    grid-row:14/15;
+  }
+
+  .mattitel{
+      grid-column: 1/-1 ;
+    grid-row:3/4 ;
+    text-align: center;
+  }
+  #bildpabakelse{
+    grid-column:1/3 ;
+    grid-row:4/6;
+  }
+  .förrättmeny{
+    grid-column:3/-3;
+    grid-row:4/6;
+  }
+  .mattiteltva{
+  grid-column: 1/-1;
+    grid-row:6/7 ;
+      text-align: center;
+  }
+
+  .varmrättmeny{
+    grid-column:3/-3 ;
+    grid-row:6/9 ;
+  }
+  .mattiteltre{
+  grid-column: 1/-1;
+    grid-row:9/10;
+      text-align: center;
+  }
+  .efterrättmeny{
+    grid-column:3/-3 ;
+    grid-row:10/12 ;
+  }
+
+  .drycktitel{
+  grid-column: 1/-1 ;
+    grid-row:12/13 ;
+      text-align: center;
+  }
+
+  .dryck{
+    grid-column:3/-3 ;
+    grid-row:13/14;
+  }
+
+  */
