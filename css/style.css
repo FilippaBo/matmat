@@ -128,11 +128,17 @@ font-family: 'DM Serif Display', serif;
   font-size: 200%;
   background-color: black;
  text-align: center;
+ text-decoration: underline;
 }
 
 .hittahit{
   color: white;
   text-decoration: none;
+}
+.hittahit:hover{
+  background-color:rgb(108, 85, 59);
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .dropdown{
